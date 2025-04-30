@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- 
-notes:
-mer skjälvklara länkar/extra länk
-mer text
--->
 <head>
   <title>Adam Källberg portfolio</title>
   <meta charset="utf-8">
@@ -51,9 +46,6 @@ mer text
         Adam Källberg Gameplay and tools developer
       </h1>
       <h2 id="iiacm" class="gjs-link-box">
-        Specialization
-      </h2>
-      <h2 id="iiacm" class="gjs-link-box">
         Rollback Netcode
         <span id="icxfor" class="gjs-text-blue">
           and why its cool
@@ -77,9 +69,15 @@ mer text
         <h3 id="icxfor" class="gjs-text-blue">
           What I had to do to implement GGPO
         </h3>
-        <!-- 
-          add text
-        -->
+        I had to edit how TGE(TGAs inhouse engine) handled the update loop so that it could be used as a callback in GGPOs update event,
+        I did this by moving the game-word update outside the eninge/render loop and made it part of the "advance frame" callback which 
+        lets GGPO advance the game state. Next I had to create a input wraper to heavily reduce the amount of data i need to package for 
+        per active player and avoid sending arbatrary data. I also had to keep the player class light-weight so the game-state was quick 
+        to save and reload/resimulate.
+      </div>
+      
+      <div id="ia21sa" class="text-main-content">
+        I dont have any visual examples as the implementation is not fully done
       </div>
     </div>
   </div>
@@ -109,7 +107,7 @@ mer text
           </div>
         </div>
         <div id="iepks" class="gjs-grid-column">
-          <a href="#" id="it9nob" class="gjs-link-box" style="color: #4BC9A3;">
+          <a href="#iepks" id="it9nob" class="gjs-link-box" style="color: #4BC9A3;">
             <img src="assets/20231016_081007520_ios.png" id="i466d" />
             No download page available
           </a>
@@ -208,7 +206,7 @@ mer text
           </a>
         </div>
         <div id="iepks-2-2" class="gjs-grid-column">
-          <a id="is8zt-2" href="#" class="gjs-link-box">
+          <a id="is8zt-2" href="#is8zt" class="gjs-link-box">
             <h2 id="ism014-2-2" class="gjs-heading">Goat to hell</h2>
           </a>
           <div id="igrx8-2" class="text-main-content">
